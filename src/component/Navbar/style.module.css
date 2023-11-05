@@ -1,0 +1,17 @@
+.navbar {
+  width: 1650px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.logo {
+  width: 40px;
+}
+@media only screen and (max-width: 520px) {
+  .logo {
+    width: 30px;
+  }
+}
