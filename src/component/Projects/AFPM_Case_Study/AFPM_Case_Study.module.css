@@ -1,0 +1,109 @@
+.wrapper {
+  padding-top: 60px;
+}
+.wrapper video[poster] {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.backToHomeAndText {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: "Adamina", serif;
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 130%;
+  color: #f0ede8;
+  padding-top: 3px;
+  padding-bottom: 30px;
+}
+.tagline {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 24px;
+  color: #ac9555;
+  max-width: 630px;
+  text-transform: uppercase;
+}
+.backtoHome {
+  text-transform: uppercase;
+}
+.videoContainer {
+  position: relative;
+}
+.videoContainer video {
+  object-fit: cover;
+  display: block;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: 60px;
+  color: #fff;
+}
+
+.textContainer {
+  padding: 60px 0;
+}
+.text {
+  padding-top: 20px;
+}
+.bold {
+  font-weight: 600;
+}
+.firstInfo {
+  text-transform: lowercase;
+  padding-bottom: 15px;
+}
+.info {
+  color: rgb(178, 174, 168);
+}
+@media only screen and (max-width: 991px) {
+  .playIcon {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 1.8em;
+  }
+  .tagline {
+    font-size: 20px;
+  }
+  .playIcon {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    padding-top: 40px;
+  }
+  .textContainer {
+    padding: 40px 0;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .backtoHome {
+    font-size: 1em;
+  }
+  .playIcon {
+    font-size: 36px;
+  }
+}

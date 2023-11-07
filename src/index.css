@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  background: #222629;
 }
 
 code {
@@ -33,4 +35,17 @@ video[poster] {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+.hightlightedText {
+  color: #ac9555;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
 }

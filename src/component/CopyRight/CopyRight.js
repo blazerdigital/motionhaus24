@@ -1,11 +1,11 @@
 import React from "react";
-import { Logo, Wrapper, Text } from "./copyright.styled";
+import styles from "./CopyRight.module.css";
 const CopyRight = ({ logo }) => {
   return (
-    <Wrapper>
-      {logo && <Logo src="/images/logo.svg" alt="#" />}
-      <Text>2022 MotionHaus.com All Rights Reserved</Text>
-    </Wrapper>
+    <div className={styles.wrapper}>
+      {logo && <img className={styles.logo} src="/images/logo.svg" alt="#" />}
+      <p className={styles.text}>2022 MotionHaus.com All Rights Reserved</p>
+    </div>
   );
 };
 

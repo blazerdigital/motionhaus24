@@ -1,0 +1,62 @@
+.videoContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.videoContainer a {
+  display: block;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.2em;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.videoWrapper {
+  position: relative;
+  transition: 0.7s;
+}
+.videoWrapper video {
+  transition: 0.7s;
+}
+.videoWrapper:hover .text {
+  display: block;
+  animation: fadeIn 0.7s;
+}
+.videoWrapper:hover video {
+  opacity: 0.5;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .videoContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .text {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .videoContainer {
+    grid-template-columns: 1fr;
+  }
+}

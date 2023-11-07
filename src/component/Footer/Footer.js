@@ -1,33 +1,32 @@
 import React from "react";
 import SocialContainer from "../Navbar/SocialContainer/SocialContainer";
-import { Container, HighlightText, Tagline } from "../common.styled";
-import { Wrapper, Title, Text } from "../HeadingAndInfo/HeadingAndInfo.styled";
-import { SocialWrapper } from "./Footer.styles";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Title>Collaborate</Title>
-        <Text>
+    <section className="container">
+      <div className={styles.wrapper}>
+        <h3 className={styles.title}>Collaborate</h3>
+        <p className={styles.text}>
           Feel free to contact me for freelance projects, collaboration or just
-          say hi at{" "}
+          say hi at <br />
           <a
             href="mailto:collaborate@motionhaus.com"
             target="_blank"
             rel="noreferrer"
           >
-            <HighlightText> collaborate@motionhaus.com </HighlightText>
+            <span className={styles.hightlightedText}>
+              collaborate@motionhaus.com.
+            </span>
           </a>
-          .
-        </Text>
-      </Wrapper>
+        </p>
+      </div>
 
-      <SocialWrapper>
+      <div className={styles.socialWrapper}>
         <SocialContainer />
-        <Tagline>CURRENTLY AVAILABLE FOR FREELANCE</Tagline>
-      </SocialWrapper>
-    </Container>
+        <p className={styles.tagline}>CURRENTLY AVAILABLE FOR FREELANCE</p>
+      </div>
+    </section>
   );
 };
 
